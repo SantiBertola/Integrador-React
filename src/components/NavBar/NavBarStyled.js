@@ -8,7 +8,7 @@ export const NavbarContainerStyled = styled.div`
     align-items: center;
     width: 100%;
     height: 100px;
-    padding: 0px 10px 0px 30px;
+    padding: 0px 10px 0px 10px;
     top: 0;
     position: fixed;
     z-index: 2;

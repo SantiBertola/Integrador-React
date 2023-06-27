@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const FooterContainerStyled = styled.footer`
-
     margin-top: 5vh;
     margin-bottom: 3vh;
 `
@@ -11,6 +10,9 @@ export const FooterLinks = styled.div`
       display: flex;
       justify-content: space-around;
       gap: 15px;
+      width: 100%;
+      padding: 1rem;
+
 
   & h4 {
     color: #cc564f;
