@@ -10,12 +10,12 @@ export const ContainerStyled = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
 
   width: 450px;
-  height: calc(100vh - 4rem);
+  /* height: calc(100vh - 4rem); */
 
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   background-color: #2b3438;
   border: 1px solid #cc564f;
   border-radius: 0 0 0 1rem;
@@ -53,7 +53,7 @@ export const TitleStyled = styled.div`
   margin: 0 0 2rem 0;
 
   & h1 {
-    margin-top: 0;
+    margin-top: 10px;
     color: #cc564f;
     font-weight: 600;
     font-size: 24px;
@@ -163,7 +163,7 @@ export const Button = styled.button`
         font-weight: 500;
         border-radius: 20px;
         padding: 10px;
-        width: 70%;
+        width: 50%;
         margin-top: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -220,8 +220,3 @@ export const QuantityHandler = styled.div`
     }
 
 `
-
-
-
-
-

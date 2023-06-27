@@ -2,12 +2,21 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ResumenContainerStyled = styled.div`
-  padding: 2rem 7rem;
+  padding: 2rem 5rem;
   margin-top: 150px;
 
   & h2 {
     color: #cc564f;
   }
+  & a {
+      color: #cc564f;
+      font-size: 20px;
+  }
+
+  & a:hover {
+      color: #b55450;
+      text-decoration: underline;
+    }
 `;
 
 export const ResumenTitleStyled = styled.div`
@@ -19,7 +28,6 @@ export const ResumenTitleStyled = styled.div`
 
   @media (max-width: 576px) {
     justify-content: center;
-    align-items: center;
     padding: 2rem 0;
   }
 `;

@@ -12,7 +12,7 @@ export const Form = styled(FormikForm)`
     height: 40%;
 
     @media (max-width: 992px) {
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
 

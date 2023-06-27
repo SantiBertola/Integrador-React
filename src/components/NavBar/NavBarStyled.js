@@ -6,9 +6,9 @@ export const NavbarContainerStyled = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 10vh;
-    padding: 0px 30px 0px 30px;
+    width: 100%;
+    height: 100px;
+    padding: 0px 10px 0px 30px;
     top: 0;
     position: fixed;
     z-index: 2;
@@ -37,7 +37,7 @@ export const NavbarLinks = styled.div`
 
     @media (max-width: 992px) { 
         position: absolute;
-        top: 120px;
+        top: 100px;
         left: 5%;
         right: 5%;
         width: 90%;

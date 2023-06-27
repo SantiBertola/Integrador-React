@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     background: #404d54;
+    overflow-x: hidden
   }
   * {    
     font-family: 'Oswald', sans-serif;

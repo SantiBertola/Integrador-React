@@ -6,7 +6,7 @@ export const Burguer = styled.div`
 .nav-icon-5{
   width: 35px;
   height: 30px;
-  margin: 10px 10px;
+  margin: 10px 35px 10px 0px;
   position: relative;
   cursor: pointer;
   display: inline-block;

@@ -26,7 +26,7 @@ export const ProductosCard = styled.div`
 
 
   @media (max-width: 576px) {
-    width: 70%;
+    width: 50%;
     height: 100%;
   }
 

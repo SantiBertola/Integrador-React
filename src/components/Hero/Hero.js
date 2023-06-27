@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HeroContainerStyled, HeroInfo, HeroLinks, HeroSearchBarStyled, IconWrapperStyled } from './HeroStyled'
+import { HeroContainerStyled, HeroInfo, HeroLinks, HeroSearchBarStyled } from './HeroStyled'
 import HeroImg from "../../assets/img/Hero-Jordan.png"
 import Button from '../UI/Button/Button'
 import { useDispatch, useSelector } from 'react-redux';

@@ -78,10 +78,3 @@ export const HeroSearchBarStyled = styled.input`
   color: white;
 
 `;
-
-export const IconWrapperStyled = styled.div`
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  font-size: 1.1rem;
-`;

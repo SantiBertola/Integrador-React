@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ProductosCard, ProductosContainer, ShowMoreButton, ButtonContainer } from './CardsProductsStyled';
+import { ProductosContainer, ShowMoreButton, ButtonContainer } from './CardsProductsStyled';
 import CardProduct from './CardProduct';
 import { useSelector } from 'react-redux';
 import { INITIAL_LIMIT } from '../../utils/constants';
