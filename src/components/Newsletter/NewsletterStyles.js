@@ -24,7 +24,7 @@ export const SelectInput = styled.select`
   border-radius: 8px;
   padding: 1rem 1rem;
   color: black;
-  width: 30%;
+  width: 50%;
   height: 50px;
   font-size: 14px;
 

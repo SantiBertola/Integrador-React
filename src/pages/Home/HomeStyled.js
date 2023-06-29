@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   max-width: 1600px;
   padding: 1rem;
   margin: 0 auto;
