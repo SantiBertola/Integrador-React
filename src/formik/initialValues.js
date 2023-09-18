@@ -1,29 +1,30 @@
-
-
 export const checkoutInitialValues = {
-    nombre: '',
-    cellphone: '',
-    location: '',
-    address: '',
-}
-
+  nombre: "",
+  cellphone: "",
+  location: "",
+  address: "",
+};
 
 export const registerInitialValues = {
-    nombre: '',
-    email: '',
-    password: ''
-}
+  nombre: "",
+  email: "",
+  password: "",
+};
 
 export const loginInitialValues = {
-    email: '',
-    password: ''
-}
+  email: "",
+  password: "",
+};
+
+export const validateInitialValues = {
+  code: "",
+};
 
 export const newsletterInitialValues = {
-    nombre: '',
-    apellido: '',
-    email: '',
-    cellphone: '',
-    genero: '',
-    edad: ''
-}
+  nombre: "",
+  apellido: "",
+  email: "",
+  cellphone: "",
+  genero: "",
+  edad: "",
+};
