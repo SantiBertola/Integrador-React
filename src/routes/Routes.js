@@ -10,8 +10,7 @@ import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
 import MisOrdenes from "../pages/MisOrdenes/MisOrdenes";
 import Felicitaciones from "../pages/Felicitaciones/Felicitaciones";
 import Resumen from "../pages/Resumen/Resumen";
-import Validate from "../pages/Validate/validate";
-
+import Validate from "../pages/Validate/Validate";
 
 const Routes = () => {
   return (
