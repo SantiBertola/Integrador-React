@@ -15,7 +15,7 @@ export const Form = styled(FormikForm)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
+  padding: 5rem 2rem;
   gap: 20px;
 `;
 

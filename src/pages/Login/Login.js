@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Form, LoginContainerStyled, LoginEmailStyled } from '../Login/LoginStyles';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useRedirect } from '../../hooks/useRedirect';
 import { Formik } from 'formik';
 import { loginInitialValues } from '../../formik/initialValues';
@@ -10,10 +10,23 @@ import { loginUser } from '../../axios/axios.user';
 import { setCurrentUser } from '../../redux/user/userSlice';
 import Submit from '../../components/UI/Submit/Submit';
 import LoginInput from '../../components/UI/LoginInput/LoginInput';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate();
+    const currentUser = useSelector(state => state.user.currentUser);
+
+
     useRedirect('/')
+
+    useEffect(() => {
+        if (!currentUser.verified) {
+          navigate('/validate');
+        } else if (currentUser.verified) {
+          navigate('/');
+        }
+      }, [currentUser, navigate]);
 
 
     return (
