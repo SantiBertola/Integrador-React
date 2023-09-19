@@ -21,9 +21,9 @@ const Login = () => {
     useRedirect('/')
 
     useEffect(() => {
-        if (!currentUser.verified) {
+        if (currentUser && !currentUser.verified) {
           navigate('/validate');
-        } else if (currentUser.verified) {
+        } else if (currentUser) {
           navigate('/');
         }
       }, [currentUser, navigate]);

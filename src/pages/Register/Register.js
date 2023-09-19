@@ -23,10 +23,10 @@ const Register = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {
-    if (!currentUser) {
-      navigate("/register");
+    if (currentUser && currentUser.verified) {
+      navigate('/');
     } else if (currentUser) {
-      navigate("/validate");
+      navigate('/validate');
     }
   }, [currentUser, navigate]);
 
