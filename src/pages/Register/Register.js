@@ -22,15 +22,13 @@ const Register = () => {
   const navigate = useNavigate();
   const currentUser = useSelector((state) => state.user.currentUser);
 
-  useEffect(() => {
-    if (currentUser && currentUser.verified) {
-      navigate('/');
-    } else if (currentUser) {
-      navigate('/validate');
-    }
-  }, [currentUser, navigate]);
+  if (currentUser && !currentUser.verified) {
+    navigate("/validate");
+    return null;
+  }
 
-  useRedirect(state?.redirectedFromCheckout ? "/checkout" : "/");
+
+
 
   return (
     <LoginContainerStyled>
@@ -68,7 +66,7 @@ const Register = () => {
           />
 
           <LoginEmailStyled to="/login">
-            <p>¿Ya tenes cuenta? Inicia sesión</p>
+            <p>¿Ya tenes cuenta? Iniciar sesión</p>
           </LoginEmailStyled>
           <Submit type="submit">Registrarte</Submit>
         </Form>

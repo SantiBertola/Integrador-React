@@ -18,7 +18,7 @@ export const registerValidationSchema = Yup.object({
 export const loginValidationSchema = Yup.object({
   email: Yup.string().required("Campo obligatorio"),
   password: Yup.string()
-    .min(8, "La contraseña es demasiado corta")
+    .min(6, "La contraseña es demasiado corta")
     .required("Campo obligatorio"),
 });
 

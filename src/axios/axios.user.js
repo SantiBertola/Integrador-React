@@ -3,13 +3,12 @@ import axios from "axios";
 
 export const createUser = async (nombre, email, password) => {
   try {
-    await axios.post(`${BASE_URL}/auth/register`, {
+    const { data } = await axios.post(`${BASE_URL}/auth/register`, {
       nombre,
       email,
       password,
     });
-    const user = await loginUser(email, password);
-    return user;
+    return data;
   } catch (error) {
     return alert(error.response.data.errors[0].msg);
   }
@@ -17,14 +16,14 @@ export const createUser = async (nombre, email, password) => {
 
 export const loginUser = async (email, password) => {
   try {
-    const response = await axios.post(`${BASE_URL}/auth/login`, {
+    const { data } = await axios.post(`${BASE_URL}/auth/login`, {
       email,
       password,
     });
-    return response.data;
+    return data;
   } catch (error) {
-    console.log({ loginUserError: error });
-    return alert(error.response.data.errors[0].msg);
+    console.log(error);
+    return alert(error.response.data.msg);
   }
 };
 
@@ -34,7 +33,7 @@ export const verifyUser = async (email, code) => {
       email,
       code,
     });
-    console.log("Usuario verificado");
+    alert("Usuario verificado con éxito");
     return response.data;
   } catch (error) {
     console.log(error);
