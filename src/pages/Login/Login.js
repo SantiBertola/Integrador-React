@@ -29,7 +29,7 @@ const Login = () => {
       <Formik
         initialValues={loginInitialValues}
         validationSchema={loginValidationSchema}
-        onSubmit={async (values, e) => {
+        onSubmit={async (values) => {
             console.log('Inicio de la función onSubmit');
             const user = await loginUser(values.email, values.password);
             console.log('Después de loginUser');
